@@ -1,0 +1,29 @@
+.button {
+  &.blue {
+    border: 1px solid $iz-semidark-blue;
+    background: linear-gradient(to bottom, $iz-blue, $iz-dark-blue);
+    color: $iz-white;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      background: linear-gradient(to bottom, $iz-dark-blue, $iz-blue);
+      color: $iz-white;
+      text-decoration: none;
+    }
+  }
+
+  &.red {
+    border: 1px solid $iz-semidark-red;
+    background: linear-gradient(to bottom, $iz-red, $iz-semidark-red);
+    color: $iz-white;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      background: linear-gradient(to bottom, $iz-semidark-red, $iz-red);
+      color: $iz-white;
+      text-decoration: none;
+    }
+  }
+}

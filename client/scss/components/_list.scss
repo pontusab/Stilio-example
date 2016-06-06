@@ -1,0 +1,100 @@
+.list {
+  background: $iz-white;
+  margin: 5rem 0;
+
+  .list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid $iz-light-gray;
+  }
+
+  .list-add {
+    @extend .button;
+    @extend .blue;
+    padding: 0.6rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.2rem;
+  }
+
+  .list-add-icon {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 0.5rem;
+  }
+
+  .list-edit {
+    @extend .button;
+    @extend .blue;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+
+  .list-container {
+    padding: 0 2rem;
+  }
+
+  .list-label {
+    color: $iz-semidark-gray;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+
+  .list-item {
+    display: flex;
+    align-items: center;
+    padding: 1.2rem 0 0.8rem 0;
+    min-height: 6.67rem;
+    border-top: 1px solid $iz-light-gray;
+  }
+
+  .list-image {
+    border-radius: 100%;
+    width: 4.2rem;
+    height: 4.2rem;
+    border: 3px solid $iz-white;
+    box-shadow: 0px 5px 8px $iz-gray-shadow;
+    background: $iz-green;
+    overflow: hidden;
+
+    img {
+      width: 4.2rem;
+      height: 4.2rem;
+      object-fit: cover;
+    }
+  }
+
+  .list-no-found {
+    padding: 7rem;
+    text-align: center;
+  }
+}
+
+// Mobile first in real project...
+@media (max-width: 50em) {
+  .list {
+    .col-sm-4 {
+      display: none;
+    }
+    .list-no-found {
+      padding: 7rem 0;
+    }
+
+    .list-header {
+      padding: 0.5rem;
+    }
+  }
+}

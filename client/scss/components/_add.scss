@@ -1,0 +1,85 @@
+.add-container {
+  width: 70%;
+  margin: 5rem auto;
+  padding-bottom: 4rem;
+  background: $iz-white;
+
+  .image-drop-upload {
+    background:  $iz-green;
+    overflow: hidden;
+    width: 10rem;
+    height: 10rem;
+    margin: 0 auto;
+    position: relative;
+    top: -3rem;
+    border-radius: 10rem;
+    border: 3px solid $iz-white;
+    box-shadow: 0px 5px 8px $iz-gray-shadow;
+    transition: background 0.1s;
+    text-align: center;
+    color: #fff;
+
+    &.uploadcare-dragging {
+      background: $iz-semidark-green;
+    }
+
+    img {
+      width: 10rem;
+      height: 10rem;
+      object-fit: cover;
+    }
+  }
+
+  .image-description {
+    padding-top: 3.5rem;
+  }
+
+  .add-edit-buttons {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .add-save {
+    padding: 0.6rem 1rem;
+    border-radius: 0.2rem;
+  }
+
+  .add-delete {
+    padding: 0.6rem 1rem;
+    border-radius: 0.2rem;
+    margin-right: 0.8rem;
+  }
+
+  small {
+    display: block;
+  }
+
+  form {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  fieldset {
+    margin-bottom: 2.5rem;
+  }
+
+  input {
+    border-color: 1px solid $iz-light-gray;
+    padding: 0.5rem;
+  }
+
+  label {
+    display: block;
+  }
+}
+
+// Mobile first in real project...
+@media (max-width: 50em) {
+  .add-container form {
+    width: 90%;
+  }
+  .add-container {
+    width: 100%;
+  }
+}

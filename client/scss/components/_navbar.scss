@@ -1,0 +1,54 @@
+.navbar  {
+  display: flex;
+  align-items: center;
+  background: $iz-dark-gray;
+  height: 4rem;
+  padding: 0 2rem;
+  width: 100%;
+
+  .logo {
+    margin-right: 3rem;
+    width: 4rem;
+  }
+
+  ul {
+    width: 100%;
+  }
+
+  .nav-item {
+    float: left;
+    margin-left: 1rem;
+
+    &.documentation {
+      float: right;
+    }
+
+    a {
+      color: $iz-white;
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding: 0 20px;
+      white-space: nowrap;
+
+      &.active,
+      &:hover {
+        color: $iz-blue;
+      }
+    }
+  }
+}
+
+// Mobile first in real project...
+@media (max-width: 40em) {
+  .navbar {
+    .nav-item{
+      display: inline;
+      float: none;
+    }
+
+    .documentation {
+      display: none;
+    }
+  }
+}
